@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Esempio JS / innerHTML</title>
+<script type="text/javascript">
+state = "N";
+function change(x) {
+m = document.getElementById(x);
+if (state == "N") {
+   state = "P"; m.innerHTML = "Buona Pasqua!";
+} else {
+   state = "N"; m.innerHTML = "Buon Natale!";
+}
+} </script>
+</head>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Creare una pagina HTML che richieda un numero N tramite un pop-up e quindi fornisca
+nel corpo della pagina in forma di tabella i valori dei quadrati e dei cubi di tutti
+i numeri interi da 1 a N.-->
+
+<html>
+
+<head>
+  <title>TPSI_Eser5_AvoJS</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+//dichiaro le varibili n1 e n2 e le "tipizzo" a Number
+
+var n1 = Number(window.prompt("Inserisci N ", "nessuno"));
+
+</script>
+
+<!-- creo una tabella in html riportando in output gli elementi html "tr" e "td"
+e successivamente la variabile intera c, c*c, c*c*c -->
+
+<table border="1">
+<script>
+
+var c = Number(1);
+var quad = Number(0);
+while(c<=n1){
+
+  document.write("<tr>");
+  document.write("<td>");
+  document.write(c);
+  document.write("<td>");
+  document.write(c*c);
+  document.write("<td>");
+  document.write(c*c*c);
+
+  c=c+1;
+}
+
+
+</script>
+</table>
+</body>
+
+
+<!-- ci nel pop-up -->
+
+
+</html>

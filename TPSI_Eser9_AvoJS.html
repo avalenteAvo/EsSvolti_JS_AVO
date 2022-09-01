@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!--
+Modificare la soluzione dell’esercizio 8 in modo che quando l’utente clicca sul proprio nome (e solo su di esso)
+venga mostrato un pop-up col testo “Salve, sono qui ai tuoi ordini!”..-->
+
+<html>
+<head> <title>TPSI_Eser9_AvoJS</title> </head>
+<body>
+
+<script type="text/javascript">
+
+// creo una funzione di nome popUp che dato come argomento la variabile nome restituisce
+// il pop-up con la frase richiesta
+
+function popUp (nome){
+return window.alert("Salve sono ai tuoi ordini");
+}
+
+// dichiaro e inizializzo la variabile nome
+var nome = window.prompt("Inserisci il tuo nome", "nessuno");
+
+//trasformo il contenuto della stringa presente in nome in MAIUSCOLO
+nome =nome.toUpperCase();
+</script>
+
+<!-- Apro un paragrafo all'interno del quale inserisco un anchor element collegato ad un evento onclick
+    che richiama la funzione popUp; il testo dell'elemento <a> è uno script che riprende con il document.write
+    la variabile nome  -->
+
+<p>Benvenuto <a onclick="popUp(nome)"> <script> document.write(nome);</script></a> nel mio umile sito!</p>
+
+</body>
+</html>
