@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!-- Realizzare una pagina HTML con un menù a scelta multipla mutuamente esclusiva,
+in cui a ciascuna scelta sia associato un colore (rosso, verde, giallo, bianco). Effettuando una delle scelte disponibili,
+il colore di sfondo della pagina deve cambiare di conseguenza (es. diventare rosso)..-->
+
+<html>
+
+<head>
+  <title>TPSI_Eser14_AvoJS</title>
+
+</head>
+<body id="corpo">
+
+<table>
+ <tr>
+   <td> SCEGLI UN COLORE</td>
+   <td>
+            <select id="selcolore" onchange="myFunction()">
+                <optgroup label="Colori">
+                  <option value = "1" >ROSSO</option>
+                  <option value = "2" >VERDE</option>
+                  <option value = "3" >GIALLO</option>
+                  <option value = "4" >BIANCO</option>
+                </optgroup>
+            </select>
+        </td>
+      </tr>
+<table>
+</body>
+
+<script src = "es14.js"></script>
+</html>
