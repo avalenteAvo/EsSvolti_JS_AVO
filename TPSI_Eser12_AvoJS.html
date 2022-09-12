@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<!-- Creare un progetto Javascript che dichiari e contestualmente inizializzi la costante MAX a 15;
-che dichiari le variabili a, b e c contemporaneamente; cheassegniada,bec rispettivamente i numeri 10, 11 e 12;
-che successivamente incrementi le tre variabili della costante dichiarata in apertura e
-che infine vi sottragga un valore numerico costante a scelta del programmatore (senza dichiarare la costante).-->
+<!-- Creare una pagina HTML che richieda tramite pop-up il diametro D di un cerchio e
+poi scriva nel corpo della pagina “Un cerchio di diametro D ha area A e circonferenza C” ove A e C
+sono i valori calcolati tramite un programma Javascript. Tutti i valori devono essere presentati con tre cifre frazionarie.
+Suggerimento: per il valore di π si usi la costante fornita dall’oggetto Math.-->
 
 <html>
 
@@ -11,8 +11,18 @@ che infine vi sottragga un valore numerico costante a scelta del programmatore (
   <title>TPSI_Eser12_AvoJS</title>
   <script src="es12.js"></script>
 </head>
-
 <body>
+
+<p id="frase"></p>
+
+<script>
+
+// versione consigliata -> utilizzo di innerHTML
+
+var el = document.getElementById("frase");
+var valore = "Un cerchio di diametro " + d + " ha area " + a + " e circonferenza " + circ  ;
+document.getElementById("frase").innerHTML = valore;
+</script>
 
 </body>
 </html>
