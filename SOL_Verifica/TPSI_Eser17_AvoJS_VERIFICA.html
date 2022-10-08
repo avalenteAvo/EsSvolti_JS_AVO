@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--
+Un’azienda desidera trasmettere dati al telefono, ma teme che i suoi telefoni possano essere controllati ed i
+messaggi intercettati. Tutti i dati sono trasmessi come numeri interi di 4 cifre.
+Ti è stato chiesto di scrivere un programma che cripta i dati in modo da trasmetterli in maniera più sicura.
+Il tuo script JS dovrà leggere un numero intero da 4 cifre inserito dall’utente via prompt dialog e criptarlo
+in questa maniera: sostituire ciascuna cifra con la somma di quella cifra più 7 modulo 10.
+Successivamente deve invertire la prima cifra con la terza e la seconda con la quarta.
+Dopodiché ci sarà in output un testo che mostra il numero criptato.
+
+-->
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>TPSI_Eser16_AvoJS</title>
+  <link rel="stylesheet" href= "es17_crittonumero.css">
+
+</head>
+
+<body>
+
+<table>
+  <tr><td>
+  <div id="bottone">
+    <button onclick="numero()"> PREMI </button>
+  </div>
+</td>
+</tr>
+<tr><td>
+<h1 id ="critto"></h1>
+</td></tr>
+</table>
+
+
+<footer> <p id="piede"> TPSIT, Prof. Valente Andrea, ITIS AVOGADRO (Torino).
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img id = "css" style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="CSS Valido!" /> </a>
+</p>
+</footer>
+<script src ="es17.js"></script>
+</body>
+</html>

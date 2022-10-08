@@ -1,0 +1,78 @@
+/* CSS for adding content example */
+
+
+body{
+background-color: rgb(240, 240, 240);
+}
+
+header{
+ background-image: url('./cartoleria.jpg');
+
+  }
+
+h1 {
+color:DimGrey;
+font-family: Courier New;
+  }
+
+#titolo{
+text-align: center;
+color: black;
+
+}
+
+table{
+
+ border: 2px solid black;
+ margin-left: 40%;
+
+}
+
+thead {
+    background-color: #3f87a6;
+    color: #fff;
+    text-align: center;
+}
+
+tbody {
+    background-color: #e4f0f5;
+}
+
+td{
+height:50px;
+text-align: center;
+}
+
+#compro, #azzero {
+margin-top: 10px;
+  height:40px;
+  display: inline-block;
+}
+
+section{
+   margin-left: 38%;
+}
+
+button{
+    background-color: #e7e7e7; color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#spesa {
+  height:350px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#piede{
+  text-align: left;
+  font-family:Copperplate;}
+
+#css {
+  margin-left: 850px;
+  margin-top: 30px;}

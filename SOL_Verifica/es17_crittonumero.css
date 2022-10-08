@@ -1,0 +1,41 @@
+/* CSS for adding content example */
+
+body{
+background-color: rgb(240, 240, 240);
+}
+
+table{
+
+  margin-top: 100px;
+margin-left: 600px;
+
+}
+
+button{
+  background-color: #e7e7e7; color: black;
+  padding: 55px 82px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+td{
+text-align: center;
+}
+
+#critto{
+font-family: monospace;
+  font-size: 70px;
+  color: red;
+}
+#piede{
+  text-align: left;
+  font-family:Copperplate;}
+
+#css {
+ position: relative;
+  margin-left: 850px;
+  margin-top: 330px;}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!--
+Cartoleria online.
+Crea una pagina HTML che permetta tramite un form con tre menù a tendina l’inserimento delle
+quantità di tre diversi beni acquistabili (penne, quaderni, bloc-notes), ciascuno variabile da 0 a 10.
+Quando l’utente preme un apposito pulsante la pagina deve calcolare il costo totale dei beni. Il
+prezzo unitario dei tre beni è rispettivamente 0.5, 1.0 e 2.0 Euro. Il risultato deve essere
+visualizzato in un campo di testo non modificabile.
+La pagina deve anche contenere un pulsante Azzera che permetta di riportare in un colpo solo a
+zero i valori di tutti i menù a tendina (e quindi anche del totale).
+La pagina deve contenere un header (con un'immagine di sfondo) ed un footer con le informazioni rispettivamente del nome della cartoleria digitale
+e dei contatti. Inserire nel footer la validazione W3C CSS.-->
+
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>TPSI_Eser16_AvoJS</title>
+  <link rel="stylesheet" href= "es16_cartoleria.css">
+</head>
+
+<body>
+<header><h1 id ="titolo">Cartoleria AVO</h1></header>
+
+<form>
+  <table>
+
+      <thead><tr><td>PRODOTTI ACQUISTABILI</td></tr></thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <label>Quantità PENNE: </label>
+              <select id="qtaPE">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </td></tr>
+
+          <tr>
+            <td>
+              <label>Quantità QUADERNI: </label>
+                <select id="qtaQUAD">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td></tr>
+
+          <tr>
+            <td>
+              <label>Quantità BLOC-NOTES: </label>
+                <select id="qtaBN">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td></tr>
+      </tbody>
+    </table>
+</form>
+
+<section>
+  <div id="compro">
+    <button onclick="compra()"> COMPRA </button>
+  </div>
+  <div id="azzero">
+    <button onclick="azzera()"> AZZERA </button>
+  </div>
+</section>
+
+<div id="spesa">
+<h1 id="tot"> </h1>
+
+</div>
+
+<footer> <p id="piede"> TPSIT, Prof. Valente Andrea, ITIS AVOGADRO (Torino).
+  <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img id = "css" style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="CSS Valido!" /> </a>
+</p>
+</footer>
+<script src = "es16.js"></script>
+</body>
+</html>
