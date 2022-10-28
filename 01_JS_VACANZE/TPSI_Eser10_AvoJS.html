@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!--
+Creare una pagina HTML che contenga un titolo di primo livello “Esercizio” e poi la frase
+“Tanto va la gatta al lardo che ci lascia lo zampino” seguita da due paragrafi,
+contenenti rispettivamente le parole GIORNO e NOTTE. Quando si fa clic su GIORNO la pagina
+deve essere mostrata con sfondo bianco e testo nero ed il titolo di primo livello deve
+essere “Adesso è giorno” mentre quando si fa clic su NOTTE la pagina deve essere mostrata con
+sfondo nero e testo bianco ed il titolo di primo livello deve essere “Adesso è notte”...-->
+
+<html>
+<head>
+<title>TPSI_Eser10_AvoJS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- apro il tag style per inserire CSS nel documento HTML-->
+
+<style type="text/css" media="all">
+
+h1{
+display:inline;
+}
+#titolo{
+display:inline;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<!-- Inserisco come titolo Esercizio e subito dopo il testo richiesto; faccio attenzione alla necessità
+della proprietà display:inline perchè h1 e p sono elementi block (si sviluppano in verticale)-->
+
+<h1 id="esh1" >Esercizio</h1>
+<p id="titolo"> “Tanto va la gatta al lardo che ci lascia lo zampino” </p>
+
+</header>
+
+<p id="cambioG"> GIORNO </p>
+<p id= "cambioN"> NOTTE </p>
+
+<script type="text/javascript">
+
+/* creo la variabile cambioG e le assegno l'elemento html identificato dall
+id "cambioG" ossia il p in cui c'è scritto GIORNO */
+
+var cambioG = document.getElementById('cambioG')
+
+/* invoco sulla variabile cambioG un metodo addEventListener che scatena il cambio
+stile e la sostituzione del testo presente in esh1 e titolo con Adesso è giorno ed uno spazio
+(invocazione del metodo innerHTML)
+*/
+
+cambioG.addEventListener('click', function onClick(event){
+document.body.style.backgroundColor = 'white';
+document.body.style.color = 'black';
+document.getElementById("esh1").innerHTML=" Adesso e' giorno! ";
+document.getElementById("titolo").innerHTML=" ";
+
+})
+
+// stessa cosa di cambioG
+
+var cambioN = document.getElementById('cambioN')
+
+cambioN.addEventListener('click', function onClick(event){
+
+ document.body.style.backgroundColor = 'black';
+ document.body.style.color = 'white';
+ document.getElementById("esh1").innerHTML=" Adesso e' notte! ";
+ document.getElementById("titolo").innerHTML=" ";
+
+})
+
+</script>
+
+</body>
+</html>
+
+<!-- 3 LINK UTILI del DOM su www3schools per capire meglio l'esercizio
+
+https://www.w3schools.com/js/js_htmldom_elements.asp
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+https://www.w3schools.com/js/js_htmldom_css.asp

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Creare una pagina HTML che richieda una serie di numeri (uno alla volta, ciascuno introdotto tramite un pop-up) e
+fornisca nel corpo della pagina l’elenco dei numeri introdotti e la loro media aritmetica.
+Si considera terminata l’introduzione dei numeri quando l’utente inserisce la parola “fine”.
+Ogni volta che un numero viene introdotto, deve comparire un nuovo pop- up che indica il numero
+introdotto e la media di tutti i valori già̀ inseriti.-->
+
+<html>
+<head> <title>TPSI_Eser7_AvoJS</title> </head>
+<body> <script type="text/javascript">
+
+//dichiarazione e inizializzazioni delle variabili
+
+var n = 0;
+var somma = 0;
+var media = 0;
+var c = 0;
+
+document.write("<h3>", "LISTA DEI NUMERI", "</h3>");
+document.write("<ul>"); //apertura lista
+
+do{
+
+n = window.prompt("Inserisci un numero, scrivi -fine- altrimenti ", "nessuno");
+
+  if(n!="fine"){
+  document.write("<li>" +n+ "</li>"); //apertura e chiusura del list item in cui comparirà "n"
+  somma = +somma + +n; // accumulo gli  n in una variabili accumulatore
+  c=+c+1; // conto gli  n per poter calcolare la mediea
+  window.alert("Numero inserito: " +n+ " Media numerica: " +somma/c);
+  }
+
+}while(n!= "fine");
+
+document.write("</ul>"); // chiusura lista
+document.write("<h3>" ," MEDIA: " +somma/c);
+document.write("<h3>", "SOMMA: "+somma);
+
+</script>
+</body>
+</html>

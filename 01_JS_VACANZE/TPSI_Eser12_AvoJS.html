@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- Creare una pagina HTML che richieda tramite pop-up il diametro D di un cerchio e
+poi scriva nel corpo della pagina “Un cerchio di diametro D ha area A e circonferenza C” ove A e C
+sono i valori calcolati tramite un programma Javascript. Tutti i valori devono essere presentati con tre cifre frazionarie.
+Suggerimento: per il valore di π si usi la costante fornita dall’oggetto Math.-->
+
+<html>
+
+<head>
+  <title>TPSI_Eser12_AvoJS</title>
+  <script src="es12.js"></script>
+</head>
+<body>
+
+<p id="frase"></p>
+
+<script>
+
+// versione consigliata -> utilizzo di innerHTML
+
+var el = document.getElementById("frase");
+var valore = "Un cerchio di diametro " + d + " ha area " + a + " e circonferenza " + circ  ;
+document.getElementById("frase").innerHTML = valore;
+</script>
+
+</body>
+</html>

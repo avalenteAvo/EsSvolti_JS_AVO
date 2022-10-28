@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- Realizzare una pagina HTML con un menù a scelta multipla mutuamente esclusiva,
+in cui a ciascuna scelta sia associato un colore (rosso, verde, giallo, bianco). Effettuando una delle scelte disponibili,
+il colore di sfondo della pagina deve cambiare di conseguenza (es. diventare rosso)..
+Modificare l’esercizio precedente, permettendo all’utente la scelta di un colore arbitrario per lo sfondo.-->
+
+<html>
+
+<head>
+  <title>TPSI_Eser15_AvoJS</title>
+
+</head>
+<body id="corpo">
+
+<table>
+ <tr>
+   <td> SCEGLI UN COLORE</td>
+   <td>
+            <select id="selcolore" onchange="myFunction()">
+                <optgroup label="Colori">
+                  <option value = "1" >ROSSO</option>
+                  <option value = "2" >VERDE</option>
+                  <option value = "3" >GIALLO</option>
+                  <option value = "4" >BIANCO</option>
+
+
+                </optgroup>
+            </select>
+        </td>
+      </tr>
+<tr><td> SCEGLI TU!</td>
+      <td> <input type="color" name="colore" id="colore"/></td>
+    </tr>
+<table>
+</body>
+
+
+
+<script>
+
+function myFunction(){
+var x = Number(document.getElementById('selcolore').value);
+switch (x) {
+  case 1:
+    document.getElementById("corpo").style.backgroundColor = "red";
+    break;
+  case 2:
+    document.getElementById("corpo").style.backgroundColor = "green";
+    break;
+  case 3:
+    document.getElementById("corpo").style.backgroundColor = "yellow";
+    break;
+  case 4:
+    document.getElementById("corpo").style.backgroundColor = "white";
+    break;
+  default:
+    document.getElementById("corpo").style.backgroundColor = "color";
+}
+
+var y = document.getElementById('colore').value;
+
+document.write(y);
+
+}
+
+
+</script>
+</html>

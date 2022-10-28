@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!-- Creare una pagina HTML che contenga un campo di testo per l'inserimento
+di una stringa da parte dell'utente e quindi – quando viene premuto un
+apposito pulsante – visualizzi in una finestra di pop-up la stringa introdotta convertita in minuscolo.-->
+
+<html>
+
+<head>
+  <title>TPSI_Eser13_AvoJS</title>
+</head>
+<body>
+
+
+    <input type="text" placeholder="Scrivi qualcosa..." id="myInput">
+    <button type="button" onclick="prendiInput();">Prendi Input</button>
+
+    <script>
+
+        function prendiInput(){
+
+            // Seleziona l'elemento input prendendo il suo relativo valore
+            var inputVal = document.getElementById("myInput").value;
+
+            // Mostra il valore dell'elemento trasformato in minuscolo
+            var minuscolo = inputVal.toLowerCase();
+            alert(minuscolo);
+        }
+
+    </script>
+
+</body>
+</html>
