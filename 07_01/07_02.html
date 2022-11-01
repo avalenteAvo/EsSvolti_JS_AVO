@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- Scrivi una funzione SumN(m, n) che calcoli il valore di m + m + m n volte.
+Per esempio , SumN(3, 4) = 3 + 3 + 3 + 3. Assumi che m e n siano interi.
+La funzione SumN deve utilizzare un costrutto for o while per controllare il calcolo.
+Non fare uso di alcuna funzione della libreria math. Incorpora questa funzione in uno script che l
+egga valori interi da un form HTML5 per m e n e restituisca il calcolo attraverso la funzione SumN.
+Il form HTML deve consistere in due campi di testo ed un bottone per iniziare il calcolo.
+L’utente deve interagire con il programma scrivendo i numeri in entrambi campi di testo e poi cliccando il bottone. -->
+
+<html>
+<head>
+  <title>07_02_Somma_N</title>
+    <script src="07_02.js" defer></script>
+</head>
+
+<body>
+<form action = "#">
+  <p><label> SOMMA DI NUMERI:
+    <input id = "n1" type = "number"></label>
+    <input id = "n2" type = "number"></label>
+    <button onclick="mostra()">CALCOLA</button></p>
+    </form>
+
+  <p id = "result"></p>
+
+
+</body>
+
+
+
+</html>

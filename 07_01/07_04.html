@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Scrivi segmenti di programma che realizzino ciascuno la seguente attività:
+a) Calcola la parte intera del quoziente quando l’intero a è diviso per l’intero b.
+b) Calcola il resto quando l’intero a è diviso per l’intero b.
+c) Utilizza pezzi del programma sviluppato in a) e b) per scrivere una funzione
+DisplayDigits che riceve un intero compreso tra 1 e 99999 e stampa una serie di caratteri,
+ciascuno dei quali separato da due spazi.
+Per esempio , l’intero 4652 deve essere stampato così 4 6 5 2
+d) Incorpora la funzione sviluppata al punto c) in uno script che prenda in input un numero intero da un
+prompt dialog e invochi DisplayDigits passando alla funzione l’intero inserito. -->
+
+<html>
+<head>
+  <title>07_04_Esercizio</title>
+  <style type="text/css">
+  tr {height: 50px;}
+  </style>
+    <script src="07_04.js" defer></script>
+</head>
+
+<body>
+<form action = "#">
+  <table id = "tabella">
+
+    <tr><td>1) PARTE INTERA QUOZIENTE:</td></tr>
+    <tr><td><label>INTERO A </label><input id = "n1" type = "number">
+    <label>INTERO B </label><input id = "n2" type = "number"></td></tr>
+    <tr><td><center><input id = "bottone1" type = "button" value = "CALCOLA"></td></tr>
+      <tr id = "result1">
+    <tr><td>2) RESTO:</td></tr>
+    <tr><td><label>INTERO A </label><input id = "n3" type = "number">
+    <label>INTERO B </label><input id = "n4" type = "number"></td></tr>
+    <tr><td><center><input id = "bottone2" type = "button" value = "CALCOLA"></td></tr>
+      <tr id = "result2">
+
+      <tr><td>3) DISPLAY DIGITS:</td></tr>
+      <tr><td><label>INTERO </label><input id = "n5" type = "number"></td></tr>
+      <tr><td><center><input id = "bottone3" type = "button" value = "CALCOLA"></td></tr>
+      <tr id = "result3">
+
+      <tr><td>4) PREMI IL PULSANTE:</td></tr>
+      <tr><td><center><input id = "bottone4" type = "button" value = "CALCOLA"></td></tr>
+      <tr id = "result4">
+
+    </table>
+    </form>
+
+
+
+</body>
